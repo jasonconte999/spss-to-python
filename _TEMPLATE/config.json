@@ -1,0 +1,9 @@
+{
+    "cloud_file": "cloud_view_generator.py",
+    "ignore_node_list": [],
+    "print_plan_length": 1,
+    "sections": [["main",[]]],
+    "parquet_output_nodes": [],
+    "s3_bucket_name":""
+}
+

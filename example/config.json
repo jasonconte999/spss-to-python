@@ -1,0 +1,14 @@
+{
+	"ignore_node_list": [],
+	"sections": [
+		[
+			"main",
+			[
+				["Section_A", ["id1LHUIPMUK37", "id55XUI1F6FU5", "id5ABX1C2IEYZ", "id2M1TX5YV335", "id3F3W9XSDURA", "idADVMSDT844"]],
+				["Section_B", ["id58EUIQPCKGH", "idVVVTEYDV4U", "id7A9VWDTSMBM", "id5T9X8RA39KY", "id7EW1Z18HVJAJ", "id2UPWCU2G39A","id1AQWZRKY3GW"]],
+				["Section_C", ["id2Y4WR6KD1QU"]]
+			]
+		]
+	],
+	"parquet_output_nodes": []
+}
