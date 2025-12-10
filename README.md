@@ -1,5 +1,8 @@
 # spss-to-python
-Code to convert an SPSS stream to pyspark code
+Code to convert an SPSS Modelet stream to pyspark code
+
+## How Does It Work
+It uses SPSS' backend API to access the data behind each node. It then walks through the stream from start to end, putting each node in pyspark format, and pasting it in a .py file as it goes.
 
 ## Requirements
 Each of the following versions are what I used. Other versions may work also
@@ -14,9 +17,10 @@ Each of the following versions are what I used. Other versions may work also
 ![alt text](images/LinesToChange.png)
 3. Copy the contents of SPSS_Python_Converter_cleaned.py
 4. Open the SPSS Modeller stream you would like to convert
+![alt text](images/sample_spss_stream.png)
 5. Click on the Magnifying Glass, then Execution
 6. Delete the contents of the Execution window and paste the whole file in
-7. Click the 'Run this script' button
+7. Click the 'Run this script' button. Conversion can take anywhere between 10 minutes and 2 hours depending on the size of the stream
 
 ![alt text](images/HowToRun.png)
 
@@ -30,3 +34,8 @@ Each of the following versions are what I used. Other versions may work also
     - `config.json`: config variables used by SPSS_Python_Converter_cleaned.py to dictate how SPSS is converted
     - `ManualCodeMap.py`: map to hijack conversion of specific nodes with custom python code
 - `/example`: examples of how to use config.json and ManualCodeMap.py. Usage is optional
+
+## Warnings
+The converter can only handle 24 different node types, and 57 of the functions in the SPSS function library (see 'function_map' in SPSS_Python_Converter_cleaned.py). If your stream contains a node or function not in this list, the converter will not be able to handle it.
+
+![alt text](images/supported_node_types.png)
