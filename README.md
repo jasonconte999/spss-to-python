@@ -1,5 +1,5 @@
 # spss-to-python
-Code to convert an SPSS Modelet stream to pyspark code
+Code to convert an SPSS Modeler stream to pyspark code
 
 ## How Does It Work
 It uses SPSS' backend API to access the data behind each node. It then walks through the stream from start to end, putting each node in pyspark format, and pasting it in a .py file as it goes.
